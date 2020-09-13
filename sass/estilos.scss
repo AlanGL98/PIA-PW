@@ -1,0 +1,31 @@
+$colorP1: rgb(0, 25, 143);
+$colorP2: rgb(0, 94, 182);
+
+@import 'generales';
+
+.header {
+    grid-area: header;
+    background: #000;
+    top: 0;
+    position: sticky;
+}
+
+.menu {
+    grid-area: menu;
+    background: #000;
+}
+
+.section {
+    grid-area: section;
+    background: #000;
+}
+
+.aside {
+    grid-area: aside;
+    background: #000;
+}
+
+.footer {
+    grid-area: footer;
+    background: #000;
+}
