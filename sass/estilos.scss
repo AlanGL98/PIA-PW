@@ -2,13 +2,7 @@ $colorP1: rgb(0, 25, 143);
 $colorP2: rgb(0, 94, 182);
 
 @import 'generales';
-
-.header {
-    grid-area: header;
-    background: #000;
-    top: 0;
-    position: sticky;
-}
+@import 'header';
 
 .menu {
     grid-area: menu;

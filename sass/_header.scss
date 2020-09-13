@@ -1,0 +1,48 @@
+.contenedor {
+    .header {
+        grid-area: header;
+        background: rgba($colorP2, 0.8);
+        top: 0;
+        position: sticky;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 20px;
+        .header-logo {
+            display: flex;
+            align-items: center;
+            .btn {
+                padding: 10px 20px;
+                font-size: 2em;
+                margin-right: 20px;
+            }
+            a {
+                height: 50px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .header-buscar{
+            display: flex;
+            margin: 15px;
+            input {
+                padding: 0 10px;
+                width: 50%;
+                outline: none;
+                border-width: 1px;
+            }
+            .btn {
+                padding: 0 20px;
+                border-radius: 0px;
+                background: rgba(#fff, 0.2);
+                &:hover {
+                    background: rgba(#fff, 0.4);
+                }
+                &:active {
+                    background: rgba(#fff, 0.2);
+                }
+            }
+        }
+    }
+}
