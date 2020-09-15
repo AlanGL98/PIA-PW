@@ -6,29 +6,33 @@
 
 body {
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background: $colorP2;
-    color: #fff;
+    font-family: sans-serif;
+    color: $colorS;
+    background: url('../img/bg/dark-paths.png');
+    background-attachment: fixed;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: $colorS;
 }
 
 .btn {
     border: none;
     background: none;
-    color: #fff;
+    color: $colorS;
     border-radius: 5px;
     padding: 10px;
     transition: 200ms;
     outline: none;
     &:hover {
-        background: rgba(#fff, 0.2);
+        background: rgba($colorS, 0.2);
     }
     &:active {
-        background: rgba(#fff, 0.0);
+        background: rgba($colorS, 0.0);
+    }
+    .fa {
+        margin-right: 10px;
     }
 }
 
@@ -37,12 +41,17 @@ a {
 }
 
 .contenedor {
-    background: $colorP1;
     display: grid;
-    grid-template-columns: 60px 2fr 1fr;
-    grid-template-rows: 60px 100vh auto;
-    grid-gap: 10px;
+    grid-template-columns: 0px 3fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-gap: 20px;
     grid-template-areas:    "header header header"
                             "menu section aside"
                             "footer footer footer";
+    background: $colorS;
+    transition: 200ms;
+}
+
+.menu-activo {
+    grid-template-columns: 200px 2fr 1fr;
 }

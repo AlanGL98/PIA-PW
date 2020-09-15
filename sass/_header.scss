@@ -1,13 +1,17 @@
 .contenedor {
     .header {
         grid-area: header;
-        background: rgba($colorP2, 0.8);
-        top: 0;
+        // background: rgba($colorP1, 0.8);
+        background: url('../img/bg/dark-paths.png');
+        background-attachment: fixed;
+        // opacity: 80%;
+        top: 0px;
         position: sticky;
         padding: 0 20px;
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: auto 1fr auto;
         grid-gap: 20px;
+        box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
         .header-logo {
             display: flex;
             align-items: center;
@@ -15,6 +19,9 @@
                 padding: 10px 20px;
                 font-size: 2em;
                 margin-right: 20px;
+                .fa {
+                    margin-right: 0px;
+                }
             }
             a {
                 height: 50px;
@@ -23,9 +30,10 @@
                 }
             }
         }
-        .header-buscar{
+        .header-buscar {
             display: flex;
             margin: 15px;
+            justify-content: center;
             input {
                 padding: 0 10px;
                 width: 50%;
@@ -35,13 +43,24 @@
             .btn {
                 padding: 0 20px;
                 border-radius: 0px;
-                background: rgba(#fff, 0.2);
+                background: rgba($colorS, 0.2);
                 &:hover {
-                    background: rgba(#fff, 0.4);
+                    background: rgba($colorS, 0.4);
                 }
                 &:active {
-                    background: rgba(#fff, 0.2);
+                    background: rgba($colorS, 0.2);
                 }
+            }
+        }
+        .header-usuario {
+            display: flex;
+            align-items: center;
+            .btn{
+                .fa {
+                    font-size: 2em;
+                    margin-right: 10px;
+                }
+                padding: 10px;
             }
         }
     }

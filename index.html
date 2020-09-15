@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- <img src="img/header.jpg" alt="" class="img-header"> -->
-    <div class="contenedor">
+    <img src="img/header-fcfm2.png" alt="" class="img-header">
+    <div class="contenedor" id="menu">
         <header class="header">
             <div class="header-logo">
-                <button class="btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button class="btn" id="nav-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
                 <a href="">
                     <img src="img/FCFM-Comunity.png" alt="">
                 </a>
@@ -21,11 +21,29 @@
             <div class="header-buscar">
                 <input type="text" placeholder="Buscar"><button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
+            <div class="header-usuario">
+                <a href="" class="btn"><i class="fa fa-user-o" aria-hidden="true"></i>Iniciar Sesion</a>
+            </div>
         </header>
-        <nav class="menu">Menu</nav>
-        <section class="section">Section</section>
+        <nav class="menu">
+            <button class="btn" id="btn-exit-menu"><i class="fa fa-arrow-left" aria-hidden="true"></i>Atras</button>
+            <button class="btn" id="btn-sub-menu-user"><i class="fa fa-user-o" aria-hidden="true"></i>Usuario</button>
+            <div class="sub-menu-user" id="sub-menu-user">
+                <a href="" class="btn"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Mis noticias</a>
+                <a href="" class="btn"><i class="fa fa-cog" aria-hidden="true"></i>Configuracion</a>
+                <a href="" class="btn"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</a>
+            </div>
+            <a href="" class="btn"><i class="fa fa-code" aria-hidden="true"></i>Agregar</a>
+            <a href="" class="btn"><i class="fa fa-code" aria-hidden="true"></i>Agregar</a>
+            <a href="" class="btn"><i class="fa fa-code" aria-hidden="true"></i>Agregar</a>
+        </nav>
+        <section class="section">
+
+        </section>
         <aside class="aside">Aside</aside>
         <footer class="footer">Footer</footer>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
