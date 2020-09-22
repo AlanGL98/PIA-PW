@@ -12,6 +12,19 @@ body {
     background-attachment: fixed;
 }
 
+h1 {
+    color: $colorS;
+    font-size: 2em;
+}
+h2 {
+    color: $colorS;
+    font-size: 1.75em;
+}
+h3 {
+    color: $colorS;
+    font-size: 1.5em;
+}
+
 a {
     text-decoration: none;
     color: $colorS;
@@ -43,15 +56,17 @@ a {
 .contenedor {
     display: grid;
     grid-template-columns: 0px 3fr 1fr;
-    grid-template-rows: 60px 1fr 1fr;
+    grid-template-rows: 60px auto auto auto auto;
     grid-gap: 20px;
     grid-template-areas:    "header header header"
                             "menu section aside"
+                            "nulo1 section aside"
+                            "nulo2 section nulo3"
                             "footer footer footer";
     background: $colorS;
     transition: 200ms;
 }
 
 .menu-activo {
-    grid-template-columns: 200px 2fr 1fr;
+    grid-template-columns: 200px 3fr 1fr;
 }

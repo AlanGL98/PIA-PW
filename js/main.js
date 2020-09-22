@@ -21,3 +21,8 @@ btnSubMenu.addEventListener('click', ()=>{
     var subMenu = document.querySelector('#sub-menu-user');
     subMenu.classList.toggle('sub-activo');
 });
+
+
+// efecto.addEventListener('mouseover', ()=>{
+//     alert('hola hola hola');
+// });
