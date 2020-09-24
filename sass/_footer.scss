@@ -1,0 +1,28 @@
+.contenedor {
+    .footer {
+        grid-area: footer;
+        background: url('../img/bg/dark-paths.png');
+        background-attachment: fixed;
+        .enlaces-footer {
+            width: 70%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .derechos {
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .redes-sociales {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            .fa {
+                margin: 20px;
+                font-size: 2em;
+            }
+        }
+    }
+}

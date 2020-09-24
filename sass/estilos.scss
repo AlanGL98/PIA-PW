@@ -6,9 +6,4 @@ $colorS: #fff;
 @import 'menu';
 @import 'section';
 @import 'aside';
-
-.footer {
-    grid-area: footer;
-    background: url('../img/bg/dark-paths.png');
-    background-attachment: fixed;
-}
+@import 'footer';
