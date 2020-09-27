@@ -1,8 +1,5 @@
-.contenedor {
-    .menu {
-        grid-area: menu;
-        top: 60px;
-        position: sticky;
+.nav-menu {
+        position: fixed;
         background: url('../img/bg/dark-paths.png');
         background-attachment: fixed;
         box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
@@ -10,7 +7,11 @@
         flex-direction: column;
         overflow: hidden;
         z-index: 2;
-        .btn {
+        width: 0px;
+        height: 100%;
+        top: 0;
+        transition: 200ms;
+        .btn-pw {
             min-width: 250px;
             padding: 10px 20px;
             width: 100%;
@@ -25,18 +26,22 @@
             transition: 200ms;
             border-top: 1px solid $colorS;
             border-bottom: 1px solid $colorS;
-            .btn {
+            .btn-pw {
                 min-width: 250px;
                 padding: 10px 20px;
                 width: 100%;
                 text-align: left;
                 border-radius: 0px;
                 padding-left: 40px;
+                outline: none;
             }
         }
     
         .sub-activo {
-            height: 120px;
+            height: 150px;
         }
-    }
+}
+
+.menu-activo {
+    width: 250px;
 }
