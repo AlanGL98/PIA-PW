@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACN,QAAQ,CAAE,MAAM,CAChB,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,IAAI,CACX,OAAO,CAAE,GAAG,CACf",
+    "sources": [
+        "../sass/estilosArticulo.scss"
+    ],
+    "names": [],
+    "file": "estilosArticulo.css"
+}

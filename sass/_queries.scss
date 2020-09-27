@@ -1,0 +1,108 @@
+@media screen and (max-width: 1200px){
+    .contenedor {
+        grid-template-areas:    "header header"
+                                "section section"
+                                "section section"
+                                "aside aside"
+                                "footer footer";
+        transition: 200ms;
+        .section {
+            margin: 0 20px;
+            .importante {
+                max-height: 600px;
+            }
+        }
+        .aside {
+            position: static;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .titulo-aside {
+                width: 100%;
+            }
+            .otras-noticias {
+                width: 40%;
+                overflow: visible;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .contenedor {
+        .section {
+            .noticia{
+                max-width: 45%;
+            }
+            .importante {
+                max-width: 100%;
+            }
+        }
+        .aside {
+            .otras-noticias {
+                overflow: hidden;
+                width: 100%;
+                justify-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor {
+        grid-template-rows: 120px auto auto auto auto;
+        .header {
+            grid-template-columns: auto auto;
+            grid-template-rows: 60px 60px;
+            grid-template-areas:    "logo usuario"
+                                    "buscar buscar";
+            height: 120px;
+            padding: 0;
+            grid-gap: 0;
+            .header-logo {
+                grid-area: logo;
+            }
+            .header-usuario {
+                grid-area: usuario;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            .header-buscar {
+                grid-area: buscar;
+                input {
+                    width: 90%;
+                }
+            }
+        }
+        .section {
+            .noticia{
+                max-width: 100%;
+                max-height: 300px;
+            }
+            .importante {
+                max-height: 400px;
+                .titulo {
+                    width: 90%;
+                    font-size: 1.3em;
+                }
+                .fecha {
+                    font-size: 1.1em;
+                }
+            }
+        }
+        .aside {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor {
+        .footer {
+            .enlaces-footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

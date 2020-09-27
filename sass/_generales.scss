@@ -61,8 +61,8 @@ a {
 
 .contenedor {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 60px auto auto auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 60px auto auto auto auto;
     grid-gap: 20px;
     grid-template-areas:    "header header"
                             "section aside"

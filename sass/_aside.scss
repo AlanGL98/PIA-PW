@@ -16,8 +16,8 @@
             border-bottom: 3px solid $colorS;
         }
         .otras-noticias {
-            height: 150px;
-            overflow: hidden;
+            height: 140px;
+            overflow: visible;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -30,19 +30,16 @@
                 margin: 5px 10px;
             }
             img {
-               width: 40%;
                height: 100%;
             }
             .fecha {
-                width: 50%;
-                height: 40px;
-                font-size: 1em;
-                margin: 0px 10px;
+                font-size: 0.9em;
+                margin: 10px 20px;
             }
             .titulo {
-                width: 50%;
-                height: 100px;
+                width: 60%;
                 font-size: 1.2em;
+                margin: 10px;
             }
         }
     }
