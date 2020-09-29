@@ -1,0 +1,73 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+
+.carousel-pw {
+    transition: 200ms;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    //Numeros romanos: M - 1000, D - 500, C - 100, L - 50, X - 10.
+    .c {
+        position: relative;
+        top: -100px;
+    }
+    .cc {
+        position: relative;
+        top: -200px;
+    }
+}
+
+.section {
+    .articulo {
+        .titulo {
+            margin: 20px 10px;
+            color: $colorP1;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .nota {
+            margin: 10px;
+            color: $colorP1;
+            font-size: 1.4em;
+        }
+        .video {
+            width: 100%;
+            height: 600px;
+            transition: 200ms;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .carousel-pw {
+        height: 500px;
+    }
+    .section {
+        .articulo {
+            .video {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carousel-pw {
+        height: 300px;
+    }
+    .section {
+        .articulo {
+            .video {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-pw {
+        height: 200px;
+    }
+}
