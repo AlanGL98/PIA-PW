@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilosLogin.css">
+    <script src="js/mainLogin.js"></script>
+</head>
+<body>
+    <div class="contenedor-login">
+        <div class="opciones">
+            <input type="radio" name="opcion" id="login" value="login">
+            <label for="login" class="label-radio login">Iniciar Sesion</label>
+                    
+            <input type="radio" name="opcion" id="create-account" value="create-account">
+            <label for="create-account" class="label-radio create-account">Crear Cuenta</label>
+        </div>
+        <div class="panel-login activar" id="panel-login">
+            <form action="" class="form-login" id="form-login" name="form-login">
+                <input type="email" name="correo" placeholder="Correo" class="inputs">
+                <input type="password" name="password" placeholder="Contraseña" class="inputs">
+                <select id="tipo-sesion" name="tipo-sesion" class="inputs">
+                    <option value="tipo1">Tipo 1</option>
+                    <option value="tipo2">Tipo 2</option>
+                    <option value="tipo3">Tipo 3</option>
+                    <option value="tipo4">Tipo 4</option>
+                </select>
+                <input type="checkbox" name="recuerdame" id="recuerdame">
+				<label for="recuerdame">Recuerdame</label>
+                <ul class="error" id="error"></ul>
+
+                <input type="submit" class="btn-pw" value="Iniciar Sesion">
+            </form>
+        </div>
+        <div class="panel-create-account" id="panel-create-account">
+            <form action="" class="create-account" id="create-account" name="create-account">
+                <input type="text" name="nombre" placeholder="Nombre" class="inputs">
+                <input type="text" name="apellido-paterno" placeholder="Apellido Paterno" class="inputs">
+                <input type="text" name="apellido-materno" placeholder="Apellido Materno" class="inputs">
+                <input type="email" name="correo" placeholder="Correo" class="inputs">
+                <input type="password" name="password" placeholder="Contraseña" class="inputs">
+                <input type="password" name="password-c" placeholder="Confirmar contraseña" class="inputs">
+                <select id="tipo" name="tipo" class="inputs">
+                    <option value="tipo1">Tipo 1</option>
+                    <option value="tipo2">Tipo 2</option>
+                    <option value="tipo3">Tipo 3</option>
+                    <option value="tipo4">Tipo 4</option>
+                </select>
+                <input type="checkbox" name="terminos" id="terminos">
+				<label for="terminos">Acepto terminos y condiciones.</label>
+                <ul class="error2" id="error2"></ul>
+
+                <input type="submit" class="btn-pw" value="Crear cuenta">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

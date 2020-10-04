@@ -1,0 +1,163 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+
+@import 'generales';
+
+.contenedor-login{
+    margin: 120px auto;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    // background: rgba($colorS, 0.2);
+    background: #fff;
+    transition: 200ms;
+    .opciones {
+        width: 100%;
+        display: flex;
+	    flex-wrap:no-wrap;
+	    justify-content:space-between;
+        margin-bottom: 20px;
+
+        input[type='radio']{
+            transition: 200ms;
+            display: none;
+        }
+        .label-radio {
+            transition: 200ms;
+            width: 49.5%;
+        }
+        .login {
+            transition: 200ms;
+            border-radius: 5px 0 0 5px;
+        }
+        .create-account {
+            transition: 200ms;
+            border-radius: 0 5px 5px 0;
+        }
+        .label-radio{
+            background: rgba($colorS, 0.2);
+            color: $colorS;
+            padding:10px 10px;
+            text-align: center;
+            background: url('../img/bg/dark-paths.png');
+            background-attachment: fixed;
+            &:hover {
+                background: rgba($colorP1, 0.9);
+            }
+        }
+        input[type="radio"]:checked + .label-radio{
+            background: rgba($colorP1, 0.6);
+            color: $colorS;
+        }
+    }
+    .panel-login{
+        overflow: hidden;
+        transition: 200ms;
+        width: 100%;
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form-login {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 70%;
+            .inputs{
+                padding: 5px;
+                width: 100%;
+                margin-bottom: 40px;
+                outline: none;
+                font-size: 1.2em;
+                transition: 200ms;
+                &:focus {
+                    border: 2px solid $colorP1;
+                }
+            }
+            input[type="checkbox"]{
+                width: 10%;
+                margin-bottom: 40px;
+                font-size: 1.2em;
+            }
+            label {
+                width: 90%;
+                color: $colorP1;
+                font-size: 1.2em;
+            }
+            ul {
+                color: red;
+                //background: $colorP1;
+                margin-bottom: 10px;
+            }
+            .btn-pw {
+                transition: 200ms;
+                color: $colorS;
+                background: $colorP1;
+                font-size: 1.2em;
+                &:hover {
+                    background: rgba($colorP1, 0.7);
+                }
+                &:active {
+                    background: $colorP1;
+                }
+            }
+        }
+    }
+    .panel-create-account {
+        overflow: hidden;
+        transition: 200ms;
+        width: 100%;
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .create-account {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 70%;
+            .inputs{
+                padding: 5px;
+                width: 100%;
+                margin-bottom: 20px;
+                outline: none;
+                font-size: 1.2em;
+                transition: 200ms;
+                &:focus {
+                    border: 2px solid $colorP1;
+                }
+            }
+            input[type="checkbox"]{
+                width: 10%;
+                margin-bottom: 40px;
+                font-size: 1.2em;
+            }
+            label {
+                width: 90%;
+                color: $colorP1;
+                font-size: 1.2em;
+            }
+            .btn-pw {
+                transition: 200ms;
+                color: $colorS;
+                background: $colorP1;
+                font-size: 1.2em;
+                &:hover {
+                    background: rgba($colorP1, 0.7);
+                }
+                &:active {
+                    background: $colorP1;
+                }
+            }
+        }
+    }
+    .activar {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .contenedor-login {
+        width: 100%;
+    }
+}
