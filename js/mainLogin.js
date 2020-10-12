@@ -29,11 +29,21 @@ window.onload = () => {
 		} 
     }
 
+    function validaContraseña(e){
+        if (formLogin.password.value.length < 8 || formLogin.password.value == null){
+            error.style.width = '80%';
+			error.innerHTML += '<li>Verificar Contraseña.</li>';
+            
+			e.preventDefault();
+        }
+    }
+
     function validaFormulario(e){
         // Reiniciamos el error para que inicie sin mensaje.
         error.innerHTML = '';
         
         validaCorreo(e);
+        validaContraseña(e);
     }
 
     formLogin.addEventListener('click', validaFormulario);
