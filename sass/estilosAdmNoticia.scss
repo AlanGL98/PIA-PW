@@ -1,0 +1,131 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+$aceptar: rgb(0, 148, 20);
+$rechazar: rgb(218, 0, 0);
+
+.aside {
+    .adm{
+        display: flex;
+        flex-wrap: wrap;
+        .usuario {
+            display: flex;
+            width: 100%;
+            .foto-usuario{
+                margin: 20px auto;
+                border-radius: 100%;
+                border: $colorS solid 5px;
+                width: 100px;
+            }
+        }
+        .accion-usuario {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.section {
+    .gestion-noticia {
+        margin: 5px 0;
+        width: 100%;
+        background: url('../img/bg/dark-paths.png');
+        background-attachment: fixed;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        overflow: hidden;
+        align-items: center;
+        .img-noticia {
+            width: 30%;
+            height: 200px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .info-noticia {
+            width: 70%;
+            .fecha {
+                font-size: 1.5em;
+                margin: 5px 20px;
+            }
+            .titulo {
+                margin: 0 10px;
+            }
+            .btn-pw{
+                margin: 5px;
+            }
+            .ver {
+                background: rgba($colorS, 0.2);
+                &:hover {
+                    background: rgba($colorS, 0.4);
+                    color: $colorP1;
+                }
+            }
+            .aceptar {
+                background: rgba($aceptar, 1.0);
+                &:hover {
+                    background: rgba($aceptar, 0.4);
+                }
+            }
+            .rechazar {
+                background: rgba($rechazar, 1.0);
+                &:hover {
+                    background: rgba($rechazar, 0.4);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contenedor {
+        grid-template-areas:    "header header"
+                                "aside aside"
+                                "section section"
+                                "section section"
+                                "footer footer";
+    }
+ }
+
+ @media screen and (max-width: 800px) {
+    .section {
+        .gestion-noticia {
+            .img-noticia {
+                display: flex;
+                align-items: center;
+            }
+            .info-noticia {
+                .fecha {
+                    font-size: 1em;
+                }
+                .titulo {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 700px) {
+    .contenedor {
+        grid-template-rows: 120px auto auto auto auto;
+        .aside {
+            display: block;
+        }
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    .section {
+        .gestion-noticia {
+            .info-noticia {
+                .titulo {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+ }
