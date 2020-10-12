@@ -1,0 +1,36 @@
+$colorP1: rgb(16, 28, 61);
+$colorS: #fff;
+
+.contenedor {
+    .section {
+        .crea-nota {
+            width: 100%;
+            .inputs {
+                width: 100%;
+                padding: 5px;
+                font-size: 1.2em;
+                margin: 10px 0;
+            }
+            textarea {
+                max-width: 1235.33px;
+            }
+            .caja  {
+                width: 100%;
+            }
+            .btn-pw {
+                width: 150px;
+                background: $colorP1;
+                &:hover {
+                    background: rgba($colorP1, 0.8);
+                }
+                &:active {
+                    background: $colorP1;
+                }
+            }
+            .crear {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+}

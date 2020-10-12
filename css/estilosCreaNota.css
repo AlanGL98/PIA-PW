@@ -1,0 +1,37 @@
+.contenedor .section .crea-nota {
+  width: 100%;
+}
+
+.contenedor .section .crea-nota .inputs {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.contenedor .section .crea-nota textarea {
+  max-width: 1235.33px;
+}
+
+.contenedor .section .crea-nota .caja {
+  width: 100%;
+}
+
+.contenedor .section .crea-nota .btn-pw {
+  width: 150px;
+  background: #101c3d;
+}
+
+.contenedor .section .crea-nota .btn-pw:hover {
+  background: rgba(16, 28, 61, 0.8);
+}
+
+.contenedor .section .crea-nota .btn-pw:active {
+  background: #101c3d;
+}
+
+.contenedor .section .crea-nota .crear {
+  width: 100%;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=estilosCreaNota.css.map */
