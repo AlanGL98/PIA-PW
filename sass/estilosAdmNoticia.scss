@@ -17,14 +17,45 @@ $rechazar: rgb(218, 0, 0);
                 width: 100px;
             }
         }
+        .info-usuario {
+            width: 100%;
+            text-align: center;
+        }
         .accion-usuario {
             width: 100%;
             text-align: center;
+            font-size: 1.4em;
+            margin-bottom: 10px;
         }
     }
 }
 
 .section {
+    .separador {
+        width: 100%;
+        border-bottom: 4px solid $colorP1;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .info {
+            color: $colorP1;
+            width: 50%;
+            margin: 0 10px;
+        }
+        .btn-pw {
+            padding: 10px;
+            background: $colorP1;
+            margin: 10px;
+            &:hover {
+                background: rgba($colorP1, 0.5);
+            }
+            &:active {
+                background: $colorP1;
+            }
+        }
+    }
     .gestion-noticia {
         margin: 5px 0;
         width: 100%;
@@ -62,17 +93,26 @@ $rechazar: rgb(218, 0, 0);
                     background: rgba($colorS, 0.4);
                     color: $colorP1;
                 }
+                &:active {
+                    background: rgba($colorS, 0.2);
+                }
             }
             .aceptar {
                 background: rgba($aceptar, 1.0);
                 &:hover {
                     background: rgba($aceptar, 0.4);
                 }
+                &:active {
+                    background: rgba($aceptar, 1.0);
+                }
             }
             .rechazar {
                 background: rgba($rechazar, 1.0);
                 &:hover {
                     background: rgba($rechazar, 0.4);
+                }
+                &:active {
+                    background: rgba($rechazar, 1.0);
                 }
             }
         }
